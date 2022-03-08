@@ -1,0 +1,17 @@
+Questão 1 quiz:
+
+Observando a função _sw_uart_wait_half_T, é possível perceber que o código realiza 1094
+loops para gerar um sleep no código, dessa forma, para calcular o baudrate isso deve
+ser levado em conta, portanto sendo o metade do tempo 1094 loops, um período inteiro
+seriam 2188, assim como o clock é 21MHz, divide-se o 2188 por 21MHz, sendo então
+2188 / 21000000 = 1.04 x 10^-4, por fim , como são 11 bits na transmissão,
+ conclui-se que 11 / 1.04 x 10^-4 = 105576 bits por segundo de baudrate.
+
+Questão 2 quiz:
+
+Dividir por 2 o loop
+
+Questão 3:
+
+Espera um período e meio por conta do start bit e das leituras seguintes 
+se espera um período.
